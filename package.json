@@ -1,0 +1,28 @@
+{
+  "name": "express-slack-error-logger",
+  "version": "1.0.0",
+  "description": "An express middleware to log errors on a slack channel via slack webhooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lissonpsantos2/express-slack-error-logger.git"
+  },
+  "keywords": [
+    "slack"
+  ],
+  "author": "Alisson Pereira dos Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lissonpsantos2/express-slack-error-logger/issues"
+  },
+  "homepage": "https://github.com/lissonpsantos2/express-slack-error-logger#readme",
+  "dependencies": {
+    "@slack/webhook": "^7.0.3"
+  },
+  "devDependencies": {
+    "express": "^4.19.2"
+  }
+}
