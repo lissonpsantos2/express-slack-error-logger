@@ -10,7 +10,7 @@ function createCodeBlock (title, code) {
   return `_${title}_${tripleBackticks}${code}${tripleBackticks}\n`
 }
 
-function ExpressSlackWebhookNotifier(webhookUrl, debug = false, skip = () => false) {
+function ExpressSlackWebhookNotifier(webhookUrl, skip = () => false) {
   if (typeof webhookUrl !== 'string') {
     throw new Error('Expected webhookUrl to be a string')
   }

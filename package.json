@@ -1,6 +1,6 @@
 {
   "name": "express-slack-error-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An express middleware to log errors on a slack channel via slack webhooks",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,11 @@
     "url": "git://github.com/lissonpsantos2/express-slack-error-logger.git"
   },
   "keywords": [
-    "slack"
+    "slack",
+    "middleware",
+    "express",
+    "logger",
+    "error"
   ],
   "author": "Alisson Pereira dos Santos",
   "license": "MIT",
