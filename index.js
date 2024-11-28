@@ -57,8 +57,6 @@ function ExpressSlackWebhookNotifier(webhookUrl, skip = () => false) {
       ts: Math.floor(Date.now() / 1000)
     }
 
-    console.log(attachment);
-
     (async () => {
       await webhook.send({attachments: [attachment]});
     })();
