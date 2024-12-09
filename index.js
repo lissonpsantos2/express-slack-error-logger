@@ -15,7 +15,7 @@ function ExpressSlackWebhookNotifier(webhookUrl, skip = () => false) {
     throw new Error('Expected webhookUrl to be a string')
   }
 
-  return function (err, req, res, next) {
+  return async function (err, req, res, next) {
     if (!(err instanceof Error)) {
       // In case a number or other primitive is thrown
       err = new Error(err)
@@ -57,9 +57,7 @@ function ExpressSlackWebhookNotifier(webhookUrl, skip = () => false) {
       ts: Math.floor(Date.now() / 1000)
     }
 
-    (async () => {
-      await webhook.send({attachments: [attachment]});
-    })();
+    await webhook.send({attachments: [attachment]});
 
     next(err)
   }

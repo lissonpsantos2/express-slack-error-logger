@@ -1,6 +1,6 @@
 {
   "name": "express-slack-error-logger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An express middleware to log errors on a slack channel via slack webhooks",
   "main": "index.js",
   "scripts": {
